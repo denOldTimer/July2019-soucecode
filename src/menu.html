@@ -8,16 +8,17 @@
   </head>
   <body>
     <!-- NAVIGATION -->
-    <nav class="fixed w-full z-30 top-0 text-white bg-tuna">
-      <div
-        class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2"
-      ></div>
-      <div class="block lg:hidden pr-4">
+    <nav class="flex items-center justify-between flex-wrap bg-teal-500 p-6">
+      <div class="flex items-center flex-shrink-0 text-white mr-6">
+        <!-- BRANDING -->
+      </div>
+      <div class="block lg:hidden">
         <button
-          id="nav-toggle"
+          id="nav-btn"
           class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white"
         >
           <svg
+            id="nav-btn"
             class="fill-current h-3 w-3"
             viewBox="0 0 20 20"
             xmlns="http://www.w3.org/2000/svg"
@@ -28,8 +29,8 @@
         </button>
       </div>
       <div
-        id="nav-content"
-        class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20"
+        id="nav-reveal"
+        class="w-full block sm:hidden flex-grow lg:flex lg:items-center lg:w-auto"
       >
         <div class="text-sm lg:flex-grow">
           <a
@@ -47,10 +48,6 @@
         </div>
       </div>
     </nav>
-
-    <!-- SECTION ONE -->
-    <section class="bg-tommy">
-      <img class="w-full" src="img/bar.jpeg" />
-    </section>
+    <!-- MAIN -->
   </body>
 </html>
