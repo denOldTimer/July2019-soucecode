@@ -1,8 +1,8 @@
-@import "./node_modules/tailwindcss/dist/base";
+@import "~tailwindcss/base";
 
-@import "./node_modules/tailwindcss/dist/components";
+@import "~tailwindcss/components";
 
-@import "./node_modules/tailwindcss/dist/utilities";
+@import "~tailwindcss/utilities";
 
 // CUSTOM CSS
 
@@ -19,5 +19,5 @@ body {
 }
 
 .bg-tuna {
-    background-color: rgba(45,55,72,.5);
+    background-color: rgba(45, 55, 72, 0.5);
 }

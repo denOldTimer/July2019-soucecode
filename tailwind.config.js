@@ -1,4 +1,6 @@
 module.exports = {
+  prefix: "sc-",
+  important: false,
   theme: {},
   extend: {
     colors: {
