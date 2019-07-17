@@ -3,14 +3,15 @@ const webpack = require("webpack");
 const autoprefixer = require("autoprefixer");
 const tailwindcss = require("tailwindcss");
 const pimport = require("postcss-import");
+//plugins
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const TerserJSPlugin = require("terser-webpack-plugin");
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 
 module.exports = {
-  mode: "production",
-  //mode: "development",
+  //mode: "production",
+  mode: "development",
   optimization: {
     minimizer: [new TerserJSPlugin({}), new OptimizeCSSAssetsPlugin({})]
   },
@@ -37,28 +38,6 @@ module.exports = {
         ]
       },
       {
-        test: /\.html$/,
-        use: [
-          {
-            loader: "html-loader",
-            options: { minimize: true }
-          }
-        ]
-      },
-      {
-        test: /\.(png|jpg|jpeg|gif|svg|eot|ttf|woff)$/,
-        use: [
-          {
-            loader: "file-loader",
-            options: {
-              name: "[name].[ext]",
-              outputPath: "img/",
-              publicPath: "img/"
-            }
-          }
-        ]
-      },
-      {
         test: /\.s?css/,
         use: [
           MiniCssExtractPlugin.loader,
@@ -77,9 +56,31 @@ module.exports = {
             }
           },
           {
-            loader: "sass-loader",
+            loader: "sass-loader"
+            // options: {
+            //   plugins: () => [tailwindcss("tailwind.config.js"), autoprefixer()]
+            // }
+          }
+        ]
+      },
+      {
+        test: /\.html$/,
+        use: [
+          {
+            loader: "html-loader",
+            options: { minimize: true }
+          }
+        ]
+      },
+      {
+        test: /\.(png|jpg|jpeg|gif|svg|eot|ttf|woff)$/,
+        use: [
+          {
+            loader: "file-loader",
             options: {
-              plugins: () => [tailwindcss("tailwind.config.js"), autoprefixer()]
+              name: "[name].[ext]",
+              outputPath: "img/", //The file location
+              publicPath: "img/" //The path reference in the links
             }
           }
         ]

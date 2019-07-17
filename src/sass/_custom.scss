@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css?family=Kelly+Slab&display=swap");
+
+$tuna: rgba(45, 55, 72, 1);
+
+.bg-tuna {
+    color: $tuna;
+}
+
+.nav-yellow {
+    color: #f1c40f;
+}
+
+.fontf {
+    font-family: 'Kelly Slab';
+}
+
+.dashes {
+    border-bottom-style: dashed;
+}
+
+.sectHeader {
+    height: 100vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sect {
+    height: calc(100vh - 150px);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#menu {
+    .sectOne {
+        background-image: url("./../img/bg-beer-3.jpg");
+    }
+
+    .sectTwo {
+        background-image: url("./../img/grill.png");
+    }
+
+    .sectThree {
+        background-image: url("./../img/bg-burger.jpg");
+    }
+}
+
+#home {
+    .sectOne {
+        background-image: url("./../img/bar.jpeg");
+    }
+}

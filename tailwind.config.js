@@ -1,12 +1,9 @@
 module.exports = {
-  prefix: "sc-",
+  prefix: "",
   important: false,
+  separator: ":",
   theme: {},
-  extend: {
-    colors: {
-      tommy: "#2D3748"
-    }
-  },
+  extend: {},
   variants: {},
   plugins: []
 };

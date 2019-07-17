@@ -1,23 +1,5 @@
-@import "~tailwindcss/base";
-
-@import "~tailwindcss/components";
-
-@import "~tailwindcss/utilities";
+@import "tailwindcss";
 
 // CUSTOM CSS
 
-body {
-    color: green;
-}
-
-.sect {
-    height: calc(100vh - 50px);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    padding: 2em 0;
-}
-
-.bg-tuna {
-    background-color: rgba(45, 55, 72, 0.5);
-}
+@import "custom";
