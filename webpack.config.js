@@ -84,6 +84,11 @@ module.exports = {
             }
           }
         ]
+      },
+      {
+        //font-awesome
+        test: /font-awesome\.config\.js/,
+        use: [{ loader: "style-loader" }, { loader: "font-awesome-loader" }]
       }
     ]
   },

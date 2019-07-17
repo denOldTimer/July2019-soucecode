@@ -11,7 +11,11 @@
     <nav class="flex flex-row fixed z-30 top-0 justify-between w-screen">
       <!-- IMAGE -->
       <div class="flex-none p-4">
-        <img class="h-32 w-32" src="./img/walters.svg" alt="Walters" />
+        <img
+          class="h-32 w-32 md:h-64 md:w-64"
+          src="./img/walters.svg"
+          alt="Walters"
+        />
       </div>
       <!-- MENU -->
       <div class="flex-grow nav-yellow p-4 w-auto">
@@ -50,9 +54,80 @@
     </nav>
 
     <!-- MAIN -->
-    <div id="home" role="main" class="flex flex-col">
+    <div id="home" role="main" class="flex flex-col h-full w-full">
       <!-- SECTION ONE -->
-      <section class="top-0 sectHeader sectOne"></section>
+      <section class="flex-1 top-0">
+        <img class="h-auto" src="./img/bar.jpeg" alt="bar" />
+      </section>
+
+      <!-- SECTION TWO -->
+      <section class="flex-1 flex-col w-full">
+        <div class="bg-black text-white w-full p-4">
+          <div
+            class="flex flex-row container mx-auto items-center justify-between"
+          >
+            <!-- CARD 1 -->
+            <div class="flex flex-col w-1/5 h-64 p-6">
+              <p class="fontf flex-none">BEER FESTIVAL</p>
+              <img class="flex-none py-2" src="./img/festival.png" alt="" />
+              <p class="flex-1">
+                Enjoy your favorite beers at our beer stand at nationwide
+                events.
+              </p>
+            </div>
+            <!-- CARD 2 -->
+            <div class="flex flex-col w-1/5 h-64 p-6">
+              <p class="fontf flex-none">BEERS</p>
+              <img class="flex-none py-2" src="./img/beers.png" alt="" />
+              <p class="flex-1">
+                No matter what your favorite brew is, we have something that
+                will make you happy!
+              </p>
+            </div>
+            <!-- CARD 3 -->
+            <div class="flex flex-col w-1/5 h-64 p-6">
+              <p class="fontf flex-none">OUR STORY</p>
+              <img class="flex-none py-2" src="./img/story.png" alt="" />
+              <p class="flex-1">
+                We are a family brewer, brewing since 1896 the finest beers in
+                the country.
+              </p>
+            </div>
+            <!-- CARD 3 -->
+            <div class="flex flex-col w-1/5 h-64 p-6">
+              <p class="fontf flex-none">THE BREWERY</p>
+              <img class="flex-none py-2" src="./img/brewery.png" alt="" />
+              <p class="flex-1">
+                Tour our Brewery and enjoy free beer tasting.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="flex-none w-full bg-black text-white">
+        <div class="bg-black text-white w-full p-4">
+          <div class="flex flex-row container mx-auto">
+            <div class="flex flex-col w-1/2 items-center justify-center">
+              <span>© 2023 by BELGIAN BREWERY Ltd.</span>
+            </div>
+            <div class="flex flex-row w-1/2 items-center justify-center">
+              <a class="px-4" href="#">
+                <i class="fab fa-facebook-square fa-2x"></i>
+              </a>
+              <a class="px-4" href="#">
+                <i class="fab fa-twitter-square fa-2x"></i>
+              </a>
+              <a class="px-4" href="#">
+                <i class="fab fa-instagram fa-2x"></i>
+              </a>
+              <a class="px-4" href="#">
+                <i class="fab fa-google-plus-square fa-2x"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
