@@ -34,10 +34,11 @@
           <!-- MENU -->
           <a class="nav-link" href="index.html">HOME</a>
           <a class="nav-link" href="menu.html">MENU</a>
-          <a class="nav-link" href="#">CONTACT</a>
+          <a id="modalShow" class="nav-link" href="#">CONTACT</a>
         </div>
       </div>
     </nav>
+    <!-- END NAVIGATION -->
 
     <!-- MAIN -->
     <div id="home" role="main" class="flex flex-col h-full w-full">
@@ -68,7 +69,7 @@
           </div>
         </div>
       </section>
-
+      <!-- END SECTION ONE -->
       <!-- SECTION TWO -->
       <section class="block flex-1 flex-col w-full">
         <div class="bg-shark text-white w-full p-4">
@@ -113,7 +114,8 @@
           </div>
         </div>
       </section>
-
+      <!-- END SECTION TWO -->
+      <!-- FOOTER -->
       <footer class="flex-none w-full bg-black text-white flex-wrap">
         <div class="bg-shark text-white w-full p-4">
           <div class="flex flex-row container mx-auto">
@@ -140,6 +142,82 @@
           </div>
         </div>
       </footer>
+      <!-- END FOOTER -->
+      <!-- CONTACT MODAL -->
+      <section
+        id="contactModal"
+        class="top-0 sect sectOne flex flex-row justify-center text-white modal"
+      >
+        <div class="flex flex-col items-center justify-center">
+          <div class=" m-3 p-6 bg-shark border border-sunrise">
+            <div class="flex flex-col justify-cemter items-center">
+              <h1>COME AND VISIT US</h1>
+
+              <div class="flex flex-row items-center justify-center">
+                <a class="px-2 sm:px-4" href="#">
+                  <i class="fab fa-facebook-square sm:text-3xl text-2xl"></i>
+                </a>
+                <a class="px-2 sm:px-4" href="#">
+                  <i class="fab fa-twitter-square sm:text-3xl text-2xl"></i>
+                </a>
+                <a class="px-2 sm:px-4" href="#">
+                  <i class="fab fa-instagram sm:text-3xl text-2xl"></i>
+                </a>
+                <a class="px-2 sm:px-4" href="#">
+                  <i class="fab fa-google-plus-square sm:text-3xl text-2xl"></i>
+                </a>
+              </div>
+
+              <h4>Walters Sports Bar & Grill</h4>
+              <p>
+                500 Terry Francois St. <br />
+                San Francisco, CA 94158 <br />
+                info@mysite.com<br />
+              </p>
+              <p class="py-4">
+                <span class="pr-4">T / 123-456-7890 </span>
+                <span>F / 123-456-7890</span>
+              </p>
+
+              <form class="w-4/5 flex flex-col" action="">
+                <input
+                  class="w-full rounded p-2 my-3 bg-gray-700 text-sunrise"
+                  type="text"
+                  placeholder="Name"
+                  require
+                />
+                <input
+                  class="w-full rounded p-2 my-3 bg-gray-700 text-sunrise"
+                  type="text"
+                  placeholder="Email"
+                  require
+                />
+                <input
+                  class="w-full rounded p-2 my-3 bg-gray-700 text-sunrise"
+                  type="text"
+                  placeholder="Phone"
+                />
+                <textarea
+                  class="rounded bg-gray-700 my-3 text-sunrise"
+                  name=""
+                  id=""
+                  cols="12"
+                  rows="8"
+                  plceholder="Type your message here"
+                ></textarea>
+                <button
+                  class="float-right rounded my-3 bg-green-500 hover:bg-green-700 text-white py-2 px-4"
+                  type="submit"
+                >
+                  SUBMIT
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END CONTACT MODAL -->
     </div>
+    <!-- END MAIN -->
   </body>
 </html>

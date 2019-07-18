@@ -1,1 +1,99 @@
-<!doctype html> <html> <head> <title>Styled Map Types</title> <meta name=viewport content="initial-scale=1,user-scalable=no"/> <meta charset=utf-8 /> <style>#map{height:100%}body,html{height:100%;margin:0;padding:0}</style> <link href="main.bundle.css" rel="stylesheet"></head> <body> <div id=map></div> <script>function initMap(){var e=new google.maps.StyledMapType([{elementType:"geometry",stylers:[{color:"#ebe3cd"}]},{elementType:"labels.text.fill",stylers:[{color:"#523735"}]},{elementType:"labels.text.stroke",stylers:[{color:"#f5f1e6"}]},{featureType:"administrative",elementType:"geometry.stroke",stylers:[{color:"#c9b2a6"}]},{featureType:"administrative.land_parcel",elementType:"geometry.stroke",stylers:[{color:"#dcd2be"}]},{featureType:"administrative.land_parcel",elementType:"labels.text.fill",stylers:[{color:"#ae9e90"}]},{featureType:"landscape.natural",elementType:"geometry",stylers:[{color:"#dfd2ae"}]},{featureType:"poi",elementType:"geometry",stylers:[{color:"#dfd2ae"}]},{featureType:"poi",elementType:"labels.text.fill",stylers:[{color:"#93817c"}]},{featureType:"poi.park",elementType:"geometry.fill",stylers:[{color:"#a5b076"}]},{featureType:"poi.park",elementType:"labels.text.fill",stylers:[{color:"#447530"}]},{featureType:"road",elementType:"geometry",stylers:[{color:"#f5f1e6"}]},{featureType:"road.arterial",elementType:"geometry",stylers:[{color:"#fdfcf8"}]},{featureType:"road.highway",elementType:"geometry",stylers:[{color:"#f8c967"}]},{featureType:"road.highway",elementType:"geometry.stroke",stylers:[{color:"#e9bc62"}]},{featureType:"road.highway.controlled_access",elementType:"geometry",stylers:[{color:"#e98d58"}]},{featureType:"road.highway.controlled_access",elementType:"geometry.stroke",stylers:[{color:"#db8555"}]},{featureType:"road.local",elementType:"labels.text.fill",stylers:[{color:"#806b63"}]},{featureType:"transit.line",elementType:"geometry",stylers:[{color:"#dfd2ae"}]},{featureType:"transit.line",elementType:"labels.text.fill",stylers:[{color:"#8f7d77"}]},{featureType:"transit.line",elementType:"labels.text.stroke",stylers:[{color:"#ebe3cd"}]},{featureType:"transit.station",elementType:"geometry",stylers:[{color:"#dfd2ae"}]},{featureType:"water",elementType:"geometry.fill",stylers:[{color:"#b9d3c2"}]},{featureType:"water",elementType:"labels.text.fill",stylers:[{color:"#92998d"}]}],{name:"Styled Map"}),t=new google.maps.Map(document.getElementById("map"),{center:{lat:55.647,lng:37.581},zoom:11,mapTypeControlOptions:{mapTypeIds:["roadmap","satellite","hybrid","terrain","styled_map"]}});t.mapTypes.set("styled_map",e),t.setMapTypeId("styled_map")}</script> <script async defer=defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script> <script type="text/javascript" src="main.bundle.js"></script></body> </html> 
+<head><link href="main.bundle.css" rel="stylesheet"></head>Html Webpack Plugin:
+<pre>
+  Error: Child compilation failed:
+  Entry module not found: Error: Can't resolve '/projects/workspace/08/July2019-  sourcecode/src/map.html' in '/projects/workspace/08/July2019-sourcecode':
+  Error: Can't resolve '/projects/workspace/08/July2019-sourcecode/src/map.html'   in '/projects/workspace/08/July2019-sourcecode'
+  
+  - compiler.js:79 childCompiler.runAsChild
+    [July2019-sourcecode]/[html-webpack-plugin]/lib/compiler.js:79:16
+  
+  - Compiler.js:306 compile
+    [July2019-sourcecode]/[webpack]/lib/Compiler.js:306:11
+  
+  - Compiler.js:631 hooks.afterCompile.callAsync.err
+    [July2019-sourcecode]/[webpack]/lib/Compiler.js:631:15
+  
+  
+  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
+    [July2019-sourcecode]/[tapable]/lib/Hook.js:154:20
+  
+  - Compiler.js:628 compilation.seal.err
+    [July2019-sourcecode]/[webpack]/lib/Compiler.js:628:31
+  
+  
+  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
+    [July2019-sourcecode]/[tapable]/lib/Hook.js:154:20
+  
+  - Compilation.js:1325 hooks.optimizeAssets.callAsync.err
+    [July2019-sourcecode]/[webpack]/lib/Compilation.js:1325:35
+  
+  
+  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
+    [July2019-sourcecode]/[tapable]/lib/Hook.js:154:20
+  
+  - Compilation.js:1316 hooks.optimizeChunkAssets.callAsync.err
+    [July2019-sourcecode]/[webpack]/lib/Compilation.js:1316:32
+  
+  
+  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
+    [July2019-sourcecode]/[tapable]/lib/Hook.js:154:20
+  
+  - Compilation.js:1311 hooks.additionalAssets.callAsync.err
+    [July2019-sourcecode]/[webpack]/lib/Compilation.js:1311:36
+  
+  
+  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
+    [July2019-sourcecode]/[tapable]/lib/Hook.js:154:20
+  
+  - Compilation.js:1307 hooks.optimizeTree.callAsync.err
+    [July2019-sourcecode]/[webpack]/lib/Compilation.js:1307:32
+  
+  
+  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
+    [July2019-sourcecode]/[tapable]/lib/Hook.js:154:20
+  
+  - Compilation.js:1244 Compilation.seal
+    [July2019-sourcecode]/[webpack]/lib/Compilation.js:1244:27
+  
+  - Compiler.js:625 compilation.finish.err
+    [July2019-sourcecode]/[webpack]/lib/Compiler.js:625:18
+  
+  - Compilation.js:1167 hooks.finishModules.callAsync.err
+    [July2019-sourcecode]/[webpack]/lib/Compilation.js:1167:4
+  
+  
+  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
+    [July2019-sourcecode]/[tapable]/lib/Hook.js:154:20
+  
+  - Compilation.js:1159 Compilation.finish
+    [July2019-sourcecode]/[webpack]/lib/Compilation.js:1159:28
+  
+  - Compiler.js:622 hooks.make.callAsync.err
+    [July2019-sourcecode]/[webpack]/lib/Compiler.js:622:17
+  
+  
+  - Compilation.js:1091 _addModuleChain
+    [July2019-sourcecode]/[webpack]/lib/Compilation.js:1091:12
+  
+  - Compilation.js:945 errorAndCallback.bail.err
+    [July2019-sourcecode]/[webpack]/lib/Compilation.js:945:6
+  
+  - Compilation.js:976 moduleFactory.create
+    [July2019-sourcecode]/[webpack]/lib/Compilation.js:976:14
+  
+  - NormalModuleFactory.js:401 factory
+    [July2019-sourcecode]/[webpack]/lib/NormalModuleFactory.js:401:22
+  
+  - NormalModuleFactory.js:130 resolver
+    [July2019-sourcecode]/[webpack]/lib/NormalModuleFactory.js:130:21
+  
+  - NormalModuleFactory.js:224 asyncLib.parallel
+    [July2019-sourcecode]/[webpack]/lib/NormalModuleFactory.js:224:22
+  
+  - async.js:2830 
+    [July2019-sourcecode]/[neo-async]/async.js:2830:7
+  
+  - async.js:6877 
+    [July2019-sourcecode]/[neo-async]/async.js:6877:13
+  
+</pre><script type="text/javascript" src="main.bundle.js"></script>

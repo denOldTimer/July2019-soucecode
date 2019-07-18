@@ -115,10 +115,6 @@ module.exports = {
     new HtmlWebPackPlugin({
       template: "./src/test.html",
       filename: "./test.html"
-    }),
-    new HtmlWebPackPlugin({
-      template: "./src/map.html",
-      filename: "./map.html"
     })
   ]
 };
