@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Test Modal</title>
+  </head>
+  <body>
+    <div><a id="modalShow" href="#">Contact</a></div>
+
+    <div id="contactModal" class="modal">
+      <div class="modalWrapper flex flex-col overflow-auto">
+        <div class="modalBtnClose float-right">&times;</div>
+        <div class="modalHeader text-white">
+          <div class="flex flex-row textwhite mx-auto">
+            <!-- left -->
+            <div class="flex w-1/2 flex-col">
+              <h1>COME AND VISIT US</h1>
+              <div class="flex flex-row w-1/2 items-center justify-center">
+                <a class="px-2 sm:px-4" href="#">
+                  <i class="fab fa-facebook-square sm:text-3xl text-2xl"></i>
+                </a>
+                <a class="px-2 sm:px-4" href="#">
+                  <i class="fab fa-twitter-square sm:text-3xl text-2xl"></i>
+                </a>
+                <a class="px-2 sm:px-4" href="#">
+                  <i class="fab fa-instagram sm:text-3xl text-2xl"></i>
+                </a>
+                <a class="px-2 sm:px-4" href="#">
+                  <i class="fab fa-google-plus-square sm:text-3xl text-2xl"></i>
+                </a>
+              </div>
+            </div>
+            <!-- right -->
+            <div class="flex w-1/2 flex-col">
+              <h4>Walters Sports Bar & Grill</h4>
+              <p>
+                500 Terry Francois St. <br />
+                San Francisco, CA 94158 <br />
+                info@mysite.com<br />
+              </p>
+              <p class="py-4">
+                <span class="pr-4">T / 123-456-7890 </span>
+                <span>F / 123-456-7890</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="modalBody flex-1">
+          <div class="flex flex-row  text-white">
+            <!-- left -->
+
+            <!-- right -->
+            <div class="flex w-2/3 flex-col">
+              <form class="flex flex-col" action="">
+                <div class="flex flex-row items-center justify-center">
+                  <div
+                    class="w-1/2 h-64 flex flex-col items-center justify-between"
+                  >
+                    <input
+                      class="w-full rounded p-2 mr-4 mt-6 bg-black text-white"
+                      type="text"
+                      placeholder="Name"
+                    />
+                    <input
+                      class="w-full rounded p-2 mr-4 bg-black text-white"
+                      type="text"
+                      placeholder="Email"
+                    />
+                    <input
+                      class="w-full rounded p-2 mr-4 mb-6 bg-black text-white"
+                      type="text"
+                      placeholder="Phone"
+                    />
+                  </div>
+                  <textarea
+                    class="w-1/2 rounded bg-black text-white"
+                    name=""
+                    id=""
+                    cols="12"
+                    rows="8"
+                    palceholder="Type your message here.."
+                  ></textarea>
+                </div>
+                <div class="">
+                  <button
+                    class="float-right rounded bg-green-500 hover:bg-green-700 text-white py-2 px-4"
+                    type="submit"
+                  >
+                    SUBMIT
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="modalFooter">
+          <h3>Modal Footer</h3>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!-- <iframe
+src="https://www.google.com/maps/d/embed?mid=1jsMQTi9AuiPPUYqCiKBqpzhL0wNgaTZ_"
+width="640"
+height="480"
+></iframe> -->

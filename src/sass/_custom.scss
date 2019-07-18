@@ -1,13 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Kelly+Slab&display=swap");
 
 $tuna: rgba(45, 55, 72, 1);
+$sunrise: #f1c40f;
 
 .bg-tuna {
     color: $tuna;
-}
-
-.nav-yellow {
-    color: #f1c40f;
 }
 
 .fontf {
@@ -26,7 +23,7 @@ $tuna: rgba(45, 55, 72, 1);
 }
 
 .sect {
-    height: calc(100vh - 150px);
+    min-height: calc(100vh - 150px);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;

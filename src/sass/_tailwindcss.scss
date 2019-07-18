@@ -2,4 +2,32 @@
 
 @import "~tailwindcss/components";
 
+.nav-link {
+    @apply .block .fontf .text-2xl .text-sunrise .leading-relaxed;
+}
+
+.nav-link:hover {
+    @apply .text-white;
+}
+
+.nav-btn {
+    @apply .flex .items-center  .px-3 .py-2 .border .rounded .text-sunrise .border-sunrise;
+}
+
+.nav-btn:hover {
+    @apply .text-white .border-white;
+}
+
+@screen md {
+    .nav-link {
+        @apply .mr-5 .text-4xl .leading-relaxed;
+    }
+}
+
+@screen lg {
+    .nav-link {
+        @apply .mr-5 .text-5xl .leading-relaxed;
+    }
+}
+
 @import "~tailwindcss/utilities";

@@ -192,7 +192,7 @@ eval("var g;\n\n// This works in non-strict mode\ng = (function() {\n\treturn th
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("/* WEBPACK VAR INJECTION */(function($) {$(document).ready(function () {\n  /*Toggle navigation dropdown list*/\n  if ($(window).width() < 560) {\n    $(\"#nav-content\").toggle(false);\n  }\n\n  $(\"#nav-toggle\").click(function () {\n    $(\"#nav-content\").toggle();\n  });\n});\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\")))\n\n//# sourceURL=webpack:///./src/js/app.js?");
+eval("/* WEBPACK VAR INJECTION */(function($) {$(document).ready(function () {\n  /*Toggle navigation dropdown list*/\n  if ($(window).width() < 560) {\n    $(\"#nav-content\").toggle(false);\n  }\n\n  $(\"#nav-toggle\").click(function () {\n    $(\"#nav-content\").toggle();\n  }); // contactModal\n\n  var modal = $(\"#contactModal\");\n  modal.hide();\n  $(\"#modalShow\").click(function () {\n    $(modal).slideToggle(\"slow\", function () {\n      modal.show();\n    });\n  });\n  $(\".modalBtnClose\").click(function () {\n    $(modal).slideToggle(\"slow\", function () {\n      modal.hide();\n    });\n  });\n  $(window).click(function (e) {\n    var m = $(\"#contactModal\").attr(\"id\");\n\n    if (e.target.id == m) {\n      $(modal).slideToggle(\"slow\", function () {\n        modal.hide();\n      });\n    }\n  });\n});\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\")))\n\n//# sourceURL=webpack:///./src/js/app.js?");
 
 /***/ }),
 

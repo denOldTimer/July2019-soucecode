@@ -8,41 +8,12 @@
   </head>
   <body>
     <!-- NAVIGATION -->
-    <nav class="flex flex-row fixed z-30 top-0 justify-between w-screen">
-      <!-- IMAGE -->
-      <div class="flex-none p-4">
-        <img
-          class="h-32 w-32 md:h-64 md:w-64"
-          src="./img/walters.svg"
-          alt="Walters"
-        />
-      </div>
-      <!-- MENU -->
-      <div class="flex-grow nav-yellow p-4 w-auto">
-        <div
-          id="nav-content"
-          class="w-full flex flex-col md:mt-0 mt-5 md:flex-row"
-        >
-          <a
-            class="block md:inline-block hover:text-white md:mr-5 md:mt-5 fontf text-3xl md:text-5xl md:leading-relaxed"
-            href="index.html"
-            >HOME</a
-          >
-          <a
-            class="block md:inline-block hover:text-white md:mr-5 md:mt-5 fontf text-3xl md:text-5xl md:leading-relaxed"
-            href="menu.html"
-            ><h1>MENU</h1></a
-          >
-        </div>
-      </div>
+    <nav class="flex flex-row fixed z-30 top-0 justify-between">
       <!-- BUTTON -->
-      <div class="flex-none nav-yellow p-4 md:hidden">
-        <button
-          id="nav-toggle"
-          class="flex items-center px-3 py-2 border rounded nav-yellow border-yellow-400 hover:text-white hover:border-white"
-        >
+      <div class="flex-none text-sunrise md:hidden">
+        <button id="nav-toggle" class=".nav-btn">
           <svg
-            class="fill-current h-3 w-3"
+            class="fill-current h-6 w-6"
             viewBox="0 0 20 20"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -50,6 +21,21 @@
             <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
           </svg>
         </button>
+      </div>
+
+      <div id="nav-content" class="flex flex-col mt-5 ">
+        <div class="flex-none md:ml-8 md:p-4">
+          <!-- IMAGE -->
+          <img
+            class="h-32 w-32 md:h-48 md:w-48 lg:h-64 lg:w-64"
+            src="./img/walters.svg"
+            alt="Walters"
+          />
+          <!-- MENU -->
+          <a class="nav-link" href="index.html">HOME</a>
+          <a class="nav-link" href="menu.html">MENU</a>
+          <a class="nav-link" href="#">CONTACT</a>
+        </div>
       </div>
     </nav>
 
@@ -60,10 +46,10 @@
 
       <!-- SECTION TWO -->
       <section class="flex flex-col w-screen py-5">
-        <div class="bg-black text-white w-full p-4">
+        <div class="bg-shark text-white w-full p-4">
           <!-- HEADING -->
           <div class="flex flex-col  container mx-auto items-center">
-            <p class="fontf text-5xl">THE BEERS</p>
+            <h1>THE BEERS</h1>
             <p class="fontf text-lg border-white border-b-2 dashes py-2">
               I'm a paragraph. Click here to add your own text and edit me. It’s
               easy. Just click “Edit Text” or double click me and you can start
@@ -85,14 +71,14 @@
                 />
               </div>
               <div class="flex flex-col w-2/3 text-white">
-                <p class="py-2 fontf text-2xl ">Belgian Small Beer</p>
+                <h4>Belgian Small Beer</h4>
                 <p class="text-sm">
                   I'm a paragraph. Click here to add your own text and edit me.
                   It’s easy. Just click “Edit Text” or double click me and you
                   can start adding your own content and make changes to the
                   font.
                 </p>
-                <p class="py-2 text-lg fontf">Details</p>
+                <h5>Details</h5>
                 <ul class="text-sm">
                   <li>Alc. 5.2% // IBUs 30</li>
                   <li>192 Calories, 12 oz serving</li>
@@ -111,14 +97,14 @@
                 />
               </div>
               <div class="flex flex-col w-2/3 text-white">
-                <p class="py-2 fontf text-2xl ">Belgian Steam Beer</p>
+                <h4>Belgian Steam Beer</h4>
                 <p class="text-sm">
                   I'm a paragraph. Click here to add your own text and edit me.
                   It’s easy. Just click “Edit Text” or double click me and you
                   can start adding your own content and make changes to the
                   font.
                 </p>
-                <p class="py-2 text-lg fontf">Details</p>
+                <h5>Details</h5>
                 <ul class="text-sm">
                   <li>Alc. 5.2% // IBUs 30</li>
                   <li>192 Calories, 12 oz serving</li>
@@ -137,14 +123,14 @@
                 />
               </div>
               <div class="flex flex-col w-2/3 text-white">
-                <p class="py-2 fontf text-2xl ">Belgian Ale</p>
+                <h4>Belgian Ale</h4>
                 <p class="text-sm">
                   I'm a paragraph. Click here to add your own text and edit me.
                   It’s easy. Just click “Edit Text” or double click me and you
                   can start adding your own content and make changes to the
                   font.
                 </p>
-                <p class="py-2 text-lg fontf">Details</p>
+                <h5>Details</h5>
                 <ul class="text-sm">
                   <li>Alc. 5.2% // IBUs 30</li>
                   <li>192 Calories, 12 oz serving</li>
@@ -163,14 +149,14 @@
                 />
               </div>
               <div class="flex flex-col w-2/3 text-white">
-                <p class="py-2 fontf text-2xl ">Belgian Porter</p>
+                <h4>Belgian Porter</h4>
                 <p class="text-sm">
                   I'm a paragraph. Click here to add your own text and edit me.
                   It’s easy. Just click “Edit Text” or double click me and you
                   can start adding your own content and make changes to the
                   font.
                 </p>
-                <p class="py-2 text-lg fontf">Details</p>
+                <h5>Details</h5>
                 <ul class="text-sm">
                   <li>Alc. 5.2% // IBUs 30</li>
                   <li>192 Calories, 12 oz serving</li>
@@ -189,14 +175,14 @@
                 />
               </div>
               <div class="flex flex-col w-2/3 text-white">
-                <p class="py-2 fontf text-2xl ">Belgian Summer</p>
+                <h4>Belgian Summer</h4>
                 <p class="text-sm">
                   I'm a paragraph. Click here to add your own text and edit me.
                   It’s easy. Just click “Edit Text” or double click me and you
                   can start adding your own content and make changes to the
                   font.
                 </p>
-                <p class="py-2 text-lg fontf">Details</p>
+                <h5>Details</h5>
                 <ul class="text-sm">
                   <li>Alc. 5.2% // IBUs 30</li>
                   <li>192 Calories, 12 oz serving</li>
@@ -213,10 +199,10 @@
 
       <!-- SECTION FOUR -->
       <section class="flex flex-col w-screen py-5">
-        <div class="bg-black text-white w-full p-4">
+        <div class="bg-shark text-white w-full p-4">
           <!-- HEADING -->
           <div class="flex flex-col  container mx-auto items-center">
-            <p class="fontf text-5xl">THE BURGERS</p>
+            <h1>THE BURGERS</h1>
             <p class="fontf text-lg border-white border-b-2 dashes py-2">
               I'm a paragraph. Click here to add your own text and edit me. It’s
               easy. Just click “Edit Text” or double click me and you can start
@@ -230,18 +216,18 @@
             <!-- *** -->
             <!-- CARD 1 -->
             <div class="w-full flex flex-row md:w-2/5 bg-black m-4">
-              <div class="mr-4 w-1/3 rounded">
+              <div class="mr-4 w-1/3">
                 <img class="h-full w-full bg-black" src="./img/burger-01.jpg" />
               </div>
               <div class="flex flex-col w-2/3 text-white">
-                <p class="py-2 fontf text-2xl ">Classic Burger</p>
+                <h4>Classic Burger</h4>
                 <p class="text-sm">
                   I'm a paragraph. Click here to add your own text and edit me.
                   It’s easy. Just click “Edit Text” or double click me and you
                   can start adding your own content and make changes to the
                   font.
                 </p>
-                <p class="py-2 text-lg fontf">Details</p>
+                <h5>Details</h5>
                 <ul class="text-sm">
                   <li></li>
                   <li>192 Calories, 12 oz serving</li>
@@ -252,18 +238,18 @@
 
             <!-- CARD 2 -->
             <div class="w-full flex flex-row md:w-2/5 bg-black m-4">
-              <div class="mr-4 w-1/3 rounded">
+              <div class="mr-4 w-1/3">
                 <img class="h-full w-full bg-black" src="./img/burger-02.jpg" />
               </div>
               <div class="flex flex-col w-2/3 text-white">
-                <p class="py-2 fontf text-2xl ">Bacon Cheese Burger</p>
+                <h4>Bacon Cheese Burger</h4>
                 <p class="text-sm">
                   I'm a paragraph. Click here to add your own text and edit me.
                   It’s easy. Just click “Edit Text” or double click me and you
                   can start adding your own content and make changes to the
                   font.
                 </p>
-                <p class="py-2 text-lg fontf">Details</p>
+                <h5>Details</h5>
                 <ul class="text-sm">
                   <li></li>
                   <li>192 Calories, 12 oz serving</li>
@@ -274,7 +260,7 @@
 
             <!-- CARD 3 -->
             <div class="w-full flex flex-row md:w-2/5 bg-black m-4">
-              <div class="mr-4 w-1/3 rounded">
+              <div class="mr-4 w-1/3">
                 <img
                   class="h-full w-full bg-black"
                   src="./img/burger-03.jpg"
@@ -282,14 +268,14 @@
                 />
               </div>
               <div class="flex flex-col w-2/3 text-white">
-                <p class="py-2 fontf text-2xl ">Onion Burger</p>
+                <h4>Onion Burger</h4>
                 <p class="text-sm">
                   I'm a paragraph. Click here to add your own text and edit me.
                   It’s easy. Just click “Edit Text” or double click me and you
                   can start adding your own content and make changes to the
                   font.
                 </p>
-                <p class="py-2 text-lg fontf">Details</p>
+                <h5>Details</h5>
                 <ul class="text-sm">
                   <li></li>
                   <li>192 Calories, 12 oz serving</li>
@@ -300,18 +286,18 @@
 
             <!-- CARD 4 -->
             <div class="w-full flex flex-row md:w-2/5 bg-black m-4">
-              <div class="mr-4 w-1/3 rounded">
+              <div class="mr-4 w-1/3">
                 <img class="h-full w-full bg-black" src="./img/burger-04.jpg" />
               </div>
               <div class="flex flex-col w-2/3 text-white">
-                <p class="py-2 fontf text-2xl ">Chicken n Cheese Burger</p>
+                <h4>Chicken n Cheese Burger</h4>
                 <p class="text-sm">
                   I'm a paragraph. Click here to add your own text and edit me.
                   It’s easy. Just click “Edit Text” or double click me and you
                   can start adding your own content and make changes to the
                   font.
                 </p>
-                <p class="py-2 text-lg fontf">Details</p>
+                <h5>Details</h5>
                 <ul class="text-sm">
                   <li></li>
                   <li>192 Calories, 12 oz serving</li>
@@ -322,7 +308,7 @@
 
             <!-- CARD 5 -->
             <div class="w-full flex flex-row md:w-2/5 bg-black m-4">
-              <div class="mr-4 w-1/3 rounded">
+              <div class="mr-4 w-1/3">
                 <img
                   class="h-full w-full bg-black"
                   src="./img/burger-05.jpeg"
@@ -330,14 +316,14 @@
                 />
               </div>
               <div class="flex flex-col w-2/3 text-white">
-                <p class="py-2 fontf text-2xl ">Easy Black Bean Burger</p>
+                <h4>Easy Black Bean Burger</h4>
                 <p class="text-sm">
                   I'm a paragraph. Click here to add your own text and edit me.
                   It’s easy. Just click “Edit Text” or double click me and you
                   can start adding your own content and make changes to the
                   font.
                 </p>
-                <p class="py-2 text-lg fontf">Details</p>
+                <h5>Details</h5>
                 <ul class="text-sm">
                   <li></li>
                   <li>192 Calories, 12 oz serving</li>
@@ -348,7 +334,7 @@
 
             <!-- CARD 6 -->
             <div class="w-full flex flex-row md:w-2/5 bg-black m-4">
-              <div class="mr-4 w-1/3 rounded">
+              <div class="mr-4 w-1/3">
                 <img
                   class="h-full w-full bg-black"
                   src="./img/burger-06.jpeg"
@@ -356,14 +342,14 @@
                 />
               </div>
               <div class="flex flex-col w-2/3 text-white">
-                <p class="py-2 fontf text-2xl ">Fish Burger</p>
+                <h4>Fish Burger</h4>
                 <p class="text-sm">
                   I'm a paragraph. Click here to add your own text and edit me.
                   It’s easy. Just click “Edit Text” or double click me and you
                   can start adding your own content and make changes to the
                   font.
                 </p>
-                <p class="py-2 text-lg fontf">Details</p>
+                <h5>Details</h5>
                 <ul class="text-sm">
                   <li></li>
                   <li>192 Calories, 12 oz serving</li>
@@ -380,10 +366,10 @@
 
       <!-- SECTION SIX -->
       <section class="flex flex-col w-screen py-5">
-        <div class="bg-black text-white w-full p-4">
+        <div class="bg-shark text-white w-full p-4">
           <!-- HEADING -->
           <div class="flex flex-col  container mx-auto items-center">
-            <p class="fontf text-5xl">SIDE DISHES</p>
+            <h1>SIDE DISHES</h1>
             <p class="fontf text-lg border-white border-b-2 dashes py-2">
               I'm a paragraph. Click here to add your own text and edit me. It’s
               easy. Just click “Edit Text” or double click me and you can start
@@ -401,14 +387,14 @@
                 <img class="h-full w-full bg-black" src="./img/fries.jpeg" />
               </div>
               <div class="flex flex-col w-2/3 text-white">
-                <p class="py-2 fontf text-2xl ">French Fries</p>
+                <h4>French Fries</h4>
                 <p class="text-sm">
                   I'm a paragraph. Click here to add your own text and edit me.
                   It’s easy. Just click “Edit Text” or double click me and you
                   can start adding your own content and make changes to the
                   font.
                 </p>
-                <p class="py-2 text-lg fontf">Details</p>
+                <h5>Details</h5>
                 <ul class="text-sm">
                   <li></li>
                   <li>192 Calories, 12 oz serving</li>
@@ -423,14 +409,14 @@
                 <img class="h-full w-full bg-black" src="./img/patato.jpeg" />
               </div>
               <div class="flex flex-col w-2/3 text-white">
-                <p class="py-2 fontf text-2xl ">Patato Wedges</p>
+                <h4>Patato Wedges</h4>
                 <p class="text-sm">
                   I'm a paragraph. Click here to add your own text and edit me.
                   It’s easy. Just click “Edit Text” or double click me and you
                   can start adding your own content and make changes to the
                   font.
                 </p>
-                <p class="py-2 text-lg fontf">Details</p>
+                <h5>Details</h5>
                 <ul class="text-sm">
                   <li></li>
                   <li>192 Calories, 12 oz serving</li>
@@ -449,14 +435,14 @@
                 />
               </div>
               <div class="flex flex-col w-2/3 text-white">
-                <p class="py-2 fontf text-2xl ">Onion Rings</p>
+                <h4>Onion Rings</h4>
                 <p class="text-sm">
                   I'm a paragraph. Click here to add your own text and edit me.
                   It’s easy. Just click “Edit Text” or double click me and you
                   can start adding your own content and make changes to the
                   font.
                 </p>
-                <p class="py-2 text-lg fontf">Details</p>
+                <h5>Details</h5>
                 <ul class="text-sm">
                   <li></li>
                   <li>192 Calories, 12 oz serving</li>
@@ -471,14 +457,14 @@
                 <img class="h-full w-full bg-black" src="./img/mash.jpeg" />
               </div>
               <div class="flex flex-col w-2/3 text-white">
-                <p class="py-2 fontf text-2xl ">Mashed Potatoes</p>
+                <h4>Mashed Potatoes</h4>
                 <p class="text-sm">
                   I'm a paragraph. Click here to add your own text and edit me.
                   It’s easy. Just click “Edit Text” or double click me and you
                   can start adding your own content and make changes to the
                   font.
                 </p>
-                <p class="py-2 text-lg fontf">Details</p>
+                <h5>Details</h5>
                 <ul class="text-sm">
                   <li></li>
                   <li>192 Calories, 12 oz serving</li>
